@@ -1,0 +1,18 @@
+server:
+  port: 8083
+
+spring:
+  jpa:
+    defer-datasource-initialization: true
+  datasource:
+    username: postgres
+    password: 123@123
+    url: jdbc:postgresql://localhost:5432/postgres
+
+keycloak:
+  server:
+    contextPath: /auth
+    adminUser:
+      username: hieu
+      password: admin
+    realmImportFile: baeldung-realm.json
